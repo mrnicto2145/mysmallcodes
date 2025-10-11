@@ -1,0 +1,14 @@
+D:\code\cs\testerrors\testerrors\bin\Debug\net9.0\testerrors.exe
+D:\code\cs\testerrors\testerrors\bin\Debug\net9.0\testerrors.deps.json
+D:\code\cs\testerrors\testerrors\bin\Debug\net9.0\testerrors.runtimeconfig.json
+D:\code\cs\testerrors\testerrors\bin\Debug\net9.0\testerrors.dll
+D:\code\cs\testerrors\testerrors\bin\Debug\net9.0\testerrors.pdb
+D:\code\cs\testerrors\testerrors\obj\Debug\net9.0\testerrors.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\cs\testerrors\testerrors\obj\Debug\net9.0\testerrors.AssemblyInfoInputs.cache
+D:\code\cs\testerrors\testerrors\obj\Debug\net9.0\testerrors.AssemblyInfo.cs
+D:\code\cs\testerrors\testerrors\obj\Debug\net9.0\testerrors.csproj.CoreCompileInputs.cache
+D:\code\cs\testerrors\testerrors\obj\Debug\net9.0\testerrors.dll
+D:\code\cs\testerrors\testerrors\obj\Debug\net9.0\refint\testerrors.dll
+D:\code\cs\testerrors\testerrors\obj\Debug\net9.0\testerrors.pdb
+D:\code\cs\testerrors\testerrors\obj\Debug\net9.0\testerrors.genruntimeconfig.cache
+D:\code\cs\testerrors\testerrors\obj\Debug\net9.0\ref\testerrors.dll
