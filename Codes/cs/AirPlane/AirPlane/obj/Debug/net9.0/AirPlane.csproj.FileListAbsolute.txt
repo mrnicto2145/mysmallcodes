@@ -1,0 +1,14 @@
+D:\code\cs\AirPlane\AirPlane\bin\Debug\net9.0\AirPlane.exe
+D:\code\cs\AirPlane\AirPlane\bin\Debug\net9.0\AirPlane.deps.json
+D:\code\cs\AirPlane\AirPlane\bin\Debug\net9.0\AirPlane.runtimeconfig.json
+D:\code\cs\AirPlane\AirPlane\bin\Debug\net9.0\AirPlane.dll
+D:\code\cs\AirPlane\AirPlane\bin\Debug\net9.0\AirPlane.pdb
+D:\code\cs\AirPlane\AirPlane\obj\Debug\net9.0\AirPlane.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\cs\AirPlane\AirPlane\obj\Debug\net9.0\AirPlane.AssemblyInfoInputs.cache
+D:\code\cs\AirPlane\AirPlane\obj\Debug\net9.0\AirPlane.AssemblyInfo.cs
+D:\code\cs\AirPlane\AirPlane\obj\Debug\net9.0\AirPlane.csproj.CoreCompileInputs.cache
+D:\code\cs\AirPlane\AirPlane\obj\Debug\net9.0\AirPlane.dll
+D:\code\cs\AirPlane\AirPlane\obj\Debug\net9.0\refint\AirPlane.dll
+D:\code\cs\AirPlane\AirPlane\obj\Debug\net9.0\AirPlane.pdb
+D:\code\cs\AirPlane\AirPlane\obj\Debug\net9.0\AirPlane.genruntimeconfig.cache
+D:\code\cs\AirPlane\AirPlane\obj\Debug\net9.0\ref\AirPlane.dll
