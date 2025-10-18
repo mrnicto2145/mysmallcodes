@@ -1,0 +1,14 @@
+D:\code\cs\Massives\Massives\bin\Debug\net9.0\Massives.exe
+D:\code\cs\Massives\Massives\bin\Debug\net9.0\Massives.deps.json
+D:\code\cs\Massives\Massives\bin\Debug\net9.0\Massives.runtimeconfig.json
+D:\code\cs\Massives\Massives\bin\Debug\net9.0\Massives.dll
+D:\code\cs\Massives\Massives\bin\Debug\net9.0\Massives.pdb
+D:\code\cs\Massives\Massives\obj\Debug\net9.0\Massives.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\cs\Massives\Massives\obj\Debug\net9.0\Massives.AssemblyInfoInputs.cache
+D:\code\cs\Massives\Massives\obj\Debug\net9.0\Massives.AssemblyInfo.cs
+D:\code\cs\Massives\Massives\obj\Debug\net9.0\Massives.csproj.CoreCompileInputs.cache
+D:\code\cs\Massives\Massives\obj\Debug\net9.0\Massives.dll
+D:\code\cs\Massives\Massives\obj\Debug\net9.0\refint\Massives.dll
+D:\code\cs\Massives\Massives\obj\Debug\net9.0\Massives.pdb
+D:\code\cs\Massives\Massives\obj\Debug\net9.0\Massives.genruntimeconfig.cache
+D:\code\cs\Massives\Massives\obj\Debug\net9.0\ref\Massives.dll
