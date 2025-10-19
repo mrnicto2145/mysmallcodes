@@ -1,0 +1,14 @@
+D:\code\cs\Bankp\bin\Debug\net9.0\Bankp.exe
+D:\code\cs\Bankp\bin\Debug\net9.0\Bankp.deps.json
+D:\code\cs\Bankp\bin\Debug\net9.0\Bankp.runtimeconfig.json
+D:\code\cs\Bankp\bin\Debug\net9.0\Bankp.dll
+D:\code\cs\Bankp\bin\Debug\net9.0\Bankp.pdb
+D:\code\cs\Bankp\obj\Debug\net9.0\Bankp.GeneratedMSBuildEditorConfig.editorconfig
+D:\code\cs\Bankp\obj\Debug\net9.0\Bankp.AssemblyInfoInputs.cache
+D:\code\cs\Bankp\obj\Debug\net9.0\Bankp.AssemblyInfo.cs
+D:\code\cs\Bankp\obj\Debug\net9.0\Bankp.csproj.CoreCompileInputs.cache
+D:\code\cs\Bankp\obj\Debug\net9.0\Bankp.dll
+D:\code\cs\Bankp\obj\Debug\net9.0\refint\Bankp.dll
+D:\code\cs\Bankp\obj\Debug\net9.0\Bankp.pdb
+D:\code\cs\Bankp\obj\Debug\net9.0\Bankp.genruntimeconfig.cache
+D:\code\cs\Bankp\obj\Debug\net9.0\ref\Bankp.dll
