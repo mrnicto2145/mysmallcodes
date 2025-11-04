@@ -1,0 +1,11 @@
+d:\code\cs\ConsoleAppForTests\ClassLibraryForTests\bin\Debug\net9.0\ClassLibraryForTests.deps.json
+d:\code\cs\ConsoleAppForTests\ClassLibraryForTests\bin\Debug\net9.0\ClassLibraryForTests.dll
+d:\code\cs\ConsoleAppForTests\ClassLibraryForTests\bin\Debug\net9.0\ClassLibraryForTests.pdb
+d:\code\cs\ConsoleAppForTests\ClassLibraryForTests\obj\Debug\net9.0\ClassLibraryForTests.GeneratedMSBuildEditorConfig.editorconfig
+d:\code\cs\ConsoleAppForTests\ClassLibraryForTests\obj\Debug\net9.0\ClassLibraryForTests.AssemblyInfoInputs.cache
+d:\code\cs\ConsoleAppForTests\ClassLibraryForTests\obj\Debug\net9.0\ClassLibraryForTests.AssemblyInfo.cs
+d:\code\cs\ConsoleAppForTests\ClassLibraryForTests\obj\Debug\net9.0\ClassLibraryForTests.csproj.CoreCompileInputs.cache
+d:\code\cs\ConsoleAppForTests\ClassLibraryForTests\obj\Debug\net9.0\ClassLibraryForTests.dll
+d:\code\cs\ConsoleAppForTests\ClassLibraryForTests\obj\Debug\net9.0\refint\ClassLibraryForTests.dll
+d:\code\cs\ConsoleAppForTests\ClassLibraryForTests\obj\Debug\net9.0\ClassLibraryForTests.pdb
+d:\code\cs\ConsoleAppForTests\ClassLibraryForTests\obj\Debug\net9.0\ref\ClassLibraryForTests.dll
