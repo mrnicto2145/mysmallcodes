@@ -14,9 +14,6 @@ public class QuotedFieldTaskTests
 		var actualToken = QuotedFieldTask.ReadQuotedField(line, startIndex);
 		ClassicAssert.AreEqual(new Token(expectedValue, startIndex, expectedLength), actualToken);
 	}
-
-	// Добавьте свои тесты
-
 }
 
 class QuotedFieldTask
@@ -36,6 +33,7 @@ class QuotedFieldTask
 		}
 		return c % 2 == 1;
 	}
+
 	public static Token ReadQuotedField(string line, int startIndex)
 	{
 		var substring = new string("");
