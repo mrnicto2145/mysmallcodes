@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code\\cs\\ConsoleAppForTests\\ConsoleAppForTests\\ConsoleAppForTests.csproj",
+      "projectUniqueName": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleAppForTests\\ConsoleAppForTests\\ConsoleAppForTests.csproj",
       "projectName": "ConsoleAppForTests",
-      "projectPath": "D:\\code\\cs\\ConsoleAppForTests\\ConsoleAppForTests\\ConsoleAppForTests.csproj",
+      "projectPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleAppForTests\\ConsoleAppForTests\\ConsoleAppForTests.csproj",
       "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
-      "outputPath": "D:\\code\\cs\\ConsoleAppForTests\\ConsoleAppForTests\\obj\\",
+      "outputPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleAppForTests\\ConsoleAppForTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -51,8 +51,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "d:\\code\\cs\\ConsoleAppForTests\\ClassLibraryForTests\\ClassLibraryForTests.csproj": {
-              "projectPath": "d:\\code\\cs\\ConsoleAppForTests\\ClassLibraryForTests\\ClassLibraryForTests.csproj"
+            "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleAppForTests\\ClassLibraryForTests\\ClassLibraryForTests.csproj": {
+              "projectPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleAppForTests\\ClassLibraryForTests\\ClassLibraryForTests.csproj"
             }
           }
         }
