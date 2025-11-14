@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+5iociNnUVc=",
+  "dgSpecHash": "VwDe8tp8kPU=",
   "success": true,
-  "projectFilePath": "D:\\code\\cs\\AngryBirds\\AngryBirds.csproj",
+  "projectFilePath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\AngryBirds\\AngryBirds.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\123\\.nuget\\packages\\avalonia\\0.10.13\\avalonia.0.10.13.nupkg.sha512",
     "C:\\Users\\123\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2020091801\\avalonia.angle.windows.natives.2.1.0.2020091801.nupkg.sha512",
@@ -89,9 +89,9 @@
       "code": "NU1904",
       "level": "Warning",
       "message": "Package 'System.Drawing.Common' 5.0.0 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rxg9-xrhp-64gj",
-      "projectPath": "D:\\code\\cs\\AngryBirds\\AngryBirds.csproj",
+      "projectPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\AngryBirds\\AngryBirds.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\code\\cs\\AngryBirds\\AngryBirds.csproj",
+      "filePath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\AngryBirds\\AngryBirds.csproj",
       "libraryId": "System.Drawing.Common",
       "targetGraphs": [
         "net6.0"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iGNkiV/XiHk=",
+  "dgSpecHash": "mF7owMuD4sg=",
   "success": true,
-  "projectFilePath": "D:\\code\\cs\\Billiards\\Billiards.csproj",
+  "projectFilePath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\Billiards\\Billiards.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\123\\.nuget\\packages\\avalonia\\0.10.13\\avalonia.0.10.13.nupkg.sha512",
     "C:\\Users\\123\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2020091801\\avalonia.angle.windows.natives.2.1.0.2020091801.nupkg.sha512",

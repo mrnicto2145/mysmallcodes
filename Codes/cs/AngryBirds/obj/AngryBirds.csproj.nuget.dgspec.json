@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\code\\cs\\AngryBirds\\AngryBirds.csproj": {}
+    "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\AngryBirds\\AngryBirds.csproj": {}
   },
   "projects": {
-    "D:\\code\\cs\\AngryBirds\\AngryBirds.csproj": {
+    "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\AngryBirds\\AngryBirds.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\code\\cs\\AngryBirds\\AngryBirds.csproj",
+        "projectUniqueName": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\AngryBirds\\AngryBirds.csproj",
         "projectName": "AngryBirds",
-        "projectPath": "D:\\code\\cs\\AngryBirds\\AngryBirds.csproj",
+        "projectPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\AngryBirds\\AngryBirds.csproj",
         "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
-        "outputPath": "D:\\code\\cs\\AngryBirds\\obj\\",
+        "outputPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\AngryBirds\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config"
