@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\code\\cs\\ConsoleAppForTests\\ClassLibraryForTests\\ClassLibraryForTests.csproj",
+      "projectUniqueName": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleAppForTests\\ClassLibraryForTests\\ClassLibraryForTests.csproj",
       "projectName": "ClassLibraryForTests",
-      "projectPath": "d:\\code\\cs\\ConsoleAppForTests\\ClassLibraryForTests\\ClassLibraryForTests.csproj",
+      "projectPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleAppForTests\\ClassLibraryForTests\\ClassLibraryForTests.csproj",
       "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
-      "outputPath": "d:\\code\\cs\\ConsoleAppForTests\\ClassLibraryForTests\\obj\\",
+      "outputPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleAppForTests\\ClassLibraryForTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\code\\cs\\Code\\Code\\Code.csproj": {}
+    "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\Code\\Code\\Code.csproj": {}
   },
   "projects": {
-    "D:\\code\\cs\\Code\\Code\\Code.csproj": {
+    "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\Code\\Code\\Code.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\code\\cs\\Code\\Code\\Code.csproj",
+        "projectUniqueName": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\Code\\Code\\Code.csproj",
         "projectName": "Code",
-        "projectPath": "D:\\code\\cs\\Code\\Code\\Code.csproj",
+        "projectPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\Code\\Code\\Code.csproj",
         "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
-        "outputPath": "D:\\code\\cs\\Code\\Code\\obj\\",
+        "outputPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\Code\\Code\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config"
