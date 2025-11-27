@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\code\\cs\\ConsoleApp8\\ConsoleApp8.csproj": {}
+    "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleApp8\\ConsoleApp8.csproj": {}
   },
   "projects": {
-    "D:\\code\\cs\\ConsoleApp8\\ConsoleApp8.csproj": {
+    "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleApp8\\ConsoleApp8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\code\\cs\\ConsoleApp8\\ConsoleApp8.csproj",
+        "projectUniqueName": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleApp8\\ConsoleApp8.csproj",
         "projectName": "ConsoleApp8",
-        "projectPath": "D:\\code\\cs\\ConsoleApp8\\ConsoleApp8.csproj",
+        "projectPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleApp8\\ConsoleApp8.csproj",
         "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
-        "outputPath": "D:\\code\\cs\\ConsoleApp8\\obj\\",
+        "outputPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleApp8\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config"
