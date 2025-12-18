@@ -5072,11 +5072,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code\\cs\\asm\\Assembler.csproj",
+      "projectUniqueName": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\asm\\Assembler.csproj",
       "projectName": "Assembler",
-      "projectPath": "D:\\code\\cs\\asm\\Assembler.csproj",
+      "projectPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\asm\\Assembler.csproj",
       "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
-      "outputPath": "D:\\code\\cs\\asm\\obj\\",
+      "outputPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\asm\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config"

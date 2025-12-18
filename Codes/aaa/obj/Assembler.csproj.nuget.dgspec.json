@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\code\\aaa\\Assembler.csproj": {}
+    "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\aaa\\Assembler.csproj": {}
   },
   "projects": {
-    "D:\\code\\aaa\\Assembler.csproj": {
+    "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\aaa\\Assembler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\code\\aaa\\Assembler.csproj",
+        "projectUniqueName": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\aaa\\Assembler.csproj",
         "projectName": "Assembler",
-        "projectPath": "D:\\code\\aaa\\Assembler.csproj",
+        "projectPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\aaa\\Assembler.csproj",
         "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
-        "outputPath": "D:\\code\\aaa\\obj\\",
+        "outputPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\aaa\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config"

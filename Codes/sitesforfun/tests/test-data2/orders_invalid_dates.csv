@@ -1,0 +1,41 @@
+name,segment,state,city,order_date,ship_mode,sales
+Claire Gute,Consumer,Kentucky,Henderson,2016-11-38,Second,993.9
+Claire Gute,Consumer,Kentucky,Henderson,2017-01-26,First,18.16
+Claire Gute,Consumer,Kentucky,Henderson,2015-10-55,Same Day,136.72
+Darrin Van Huff,Corporate,California,Los Angeles,2016-09-23,First,22.98
+Darrin Van Huff,Corporate,California,Los Angeles,2016-26-12,Second,14.62
+Darrin Van Huff,Corporate,California,Los Angeles,2017-06-30,Standard,19.52
+Darrin Van Huff,Corporate,California,Los Angeles,2017-12-04,Same Day,188.552
+Darrin Van Huff,Corporate,California,Los Angeles,2017-14-11,Standard,873.811
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2015-12-04,Standard,794.574
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2017-04-23,First,30.352
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2017-09-09,Standard,458.984
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2017-01-34,Standard,154.9
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2017-12-01,Standard,183.82
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2015-10-11,Standard,979.9455
+Brosina Hoffman,Consumer,California,Los Angeles,2014-06-09,Standard,3714.304
+Brosina Hoffman,Consumer,California,Los Angeles,2015-11-22,First,32.985
+Brosina Hoffman,Consumer,California,Los Angeles,2016-13-23,Standard,1094.25
+Brosina Hoffman,Consumer,California,Los Angeles,2017-05-18,Standard,36.048
+Brosina Hoffman,Consumer,California,Los Angeles,2017-01-14,Standard,175.086
+Brosina Hoffman,Consumer,California,Los Angeles,2017-12-07,Standard,372.64
+Brosina Hoffman,Consumer,California,Los Angeles,2014-11-11,Standard,808.928
+Brosina Hoffman,Consumer,California,Los Angeles,2015-02-08,First,21.11
+Andrew Allen,Consumer,North Carolina,Concord,2014-05-04,Same Day,27.46
+Andrew Allen,Consumer,North Carolina,Concord,2016-18-36,Standard,1157.98
+Andrew Allen,Consumer,North Carolina,Concord,2016-07-17,Standard,589.52
+Andrew Allen,Consumer,North Carolina,Concord,2017-04-15,Standard,15.552
+Irene Maddox,Consumer,Washington,Seattle,2014-12-19,Second,1979.89
+Irene Maddox,Consumer,Washington,Seattle,2015-11-22,Standard,11.61
+Irene Maddox,Consumer,Washington,Seattle,2015-12-11,Standard,730.038
+Irene Maddox,Consumer,Washington,Seattle,2015-07-04,Standard,1099.96
+Irene Maddox,Consumer,Washington,Seattle,2016-11-06,Second,84.84
+Irene Maddox,Consumer,Washington,Seattle,2016-06-23,Standard,616.16
+Irene Maddox,Consumer,Washington,Seattle,2016-12-05,Standard,407.976
+Harold Pawlan,Home Office,Texas,Fort Worth,2014-05-36,Standard,140.736
+Harold Pawlan,Home Office,Texas,Fort Worth,2014-11-24,Standard,111.15
+Harold Pawlan,Home Office,Texas,Fort Worth,2015-10-31,Standard,70.12
+Harold Pawlan,Home Office,Texas,Fort Worth,2015-32-03,Second,184.66
+Harold Pawlan,Home Office,Texas,Fort Worth,2017-11-30,Second,1311.372
+Harold Pawlan,Home Office,Texas,Fort Worth,2017-01-23,Standard,100.922
+Harold Pawlan,Home Office,Texas,Fort Worth,2015-11-42,Standard,71.354

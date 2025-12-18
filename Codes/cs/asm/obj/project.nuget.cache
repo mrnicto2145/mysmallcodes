@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PviJhrgNBxw=",
+  "dgSpecHash": "ZjUW+sdY+DU=",
   "success": true,
-  "projectFilePath": "D:\\code\\cs\\asm\\Assembler.csproj",
+  "projectFilePath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\asm\\Assembler.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\123\\.nuget\\packages\\microsoft.codecoverage\\17.0.0\\microsoft.codecoverage.17.0.0.nupkg.sha512",
     "C:\\Users\\123\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

@@ -1,0 +1,153 @@
+name,segment,state,city,order_date,ship_mode,sales
+Claire Gute,Consumer,Kentucky,Henderson,2016-11-08,Second,993.9
+Claire Gute,Consumer,Kentucky,Henderson,2017-01-26,First,18.16
+Claire Gute,Consumer,Kentucky,Henderson,2015-10-15,Same Day,136.72
+Darrin Van Huff,Corporate,California,Los Angeles,2016-09-23,First,22.98
+Darrin Van Huff,Corporate,California,Los Angeles,2016-06-12,Second,14.62
+Darrin Van Huff,Corporate,California,Los Angeles,2017-06-30,Standard,19.52
+Darrin Van Huff,Corporate,California,Los Angeles,2017-12-04,Same Day,188.552
+Darrin Van Huff,Corporate,California,Los Angeles,2017-12-11,Standard,873.811
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2015-12-04,Standard,794.574
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2017-04-23,First,30.352
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2017-09-09,Standard,458.984
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2017-01-14,Standard,154.9
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2017-12-01,Standard,183.82
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2015-10-11,Standard,979.9455
+Brosina Hoffman,Consumer,California,Los Angeles,2014-06-09,Standard,3714.304
+Brosina Hoffman,Consumer,California,Los Angeles,2015-11-22,First,32.985
+Brosina Hoffman,Consumer,California,Los Angeles,2016-03-03,Standard,1094.25
+Brosina Hoffman,Consumer,California,Los Angeles,2017-05-18,Standard,36.048
+Brosina Hoffman,Consumer,California,Los Angeles,2017-01-14,Standard,175.086
+Brosina Hoffman,Consumer,California,Los Angeles,2017-12-07,Standard,372.64
+Brosina Hoffman,Consumer,California,Los Angeles,2014-11-11,Standard,808.928
+Brosina Hoffman,Consumer,California,Los Angeles,2015-02-08,First,21.11
+Andrew Allen,Consumer,North Carolina,Concord,2014-05-04,Same Day,27.46
+Andrew Allen,Consumer,North Carolina,Concord,2016-08-26,Standard,1157.98
+Andrew Allen,Consumer,North Carolina,Concord,2016-07-17,Standard,589.52
+Andrew Allen,Consumer,North Carolina,Concord,2017-04-15,Standard,15.552
+Irene Maddox,Consumer,Washington,Seattle,2014-12-19,Second,1979.89
+Irene Maddox,Consumer,Washington,Seattle,2015-11-22,Standard,11.61
+Irene Maddox,Consumer,Washington,Seattle,2015-12-11,Standard,730.038
+Irene Maddox,Consumer,Washington,Seattle,2015-07-04,Standard,1099.96
+Irene Maddox,Consumer,Washington,Seattle,2016-11-06,Second,84.84
+Irene Maddox,Consumer,Washington,Seattle,2016-06-23,Standard,616.16
+Irene Maddox,Consumer,Washington,Seattle,2016-12-05,Standard,407.976
+Harold Pawlan,Home Office,Texas,Fort Worth,2014-05-06,Standard,140.736
+Harold Pawlan,Home Office,Texas,Fort Worth,2014-11-24,Standard,111.15
+Harold Pawlan,Home Office,Texas,Fort Worth,2015-10-31,Standard,70.12
+Harold Pawlan,Home Office,Texas,Fort Worth,2015-12-03,Second,184.66
+Harold Pawlan,Home Office,Texas,Fort Worth,2017-11-30,Second,1311.372
+Harold Pawlan,Home Office,Texas,Fort Worth,2017-01-23,Standard,100.922
+Harold Pawlan,Home Office,Texas,Fort Worth,2015-11-22,Standard,71.354
+Pete Kriz,Consumer,Wisconsin,Madison,2014-11-11,Standard,665.88
+Pete Kriz,Consumer,Wisconsin,Madison,2016-09-05,Second,634.46
+Pete Kriz,Consumer,Wisconsin,Madison,2016-12-16,Standard,563.92
+Pete Kriz,Consumer,Wisconsin,Madison,2016-12-14,Standard,479.05
+Pete Kriz,Consumer,Wisconsin,Madison,2016-08-16,Standard,10.86
+Pete Kriz,Consumer,Wisconsin,Madison,2016-04-16,Standard,158.256
+Pete Kriz,Consumer,Wisconsin,Madison,2017-12-21,Second,23.88
+Pete Kriz,Consumer,Wisconsin,Madison,2017-09-04,Second,1491.616
+Pete Kriz,Consumer,Wisconsin,Madison,2017-11-07,Standard,100.94
+Pete Kriz,Consumer,Wisconsin,Madison,2017-03-05,Same Day,25.06
+Pete Kriz,Consumer,Wisconsin,Madison,2016-09-24,Standard,155.372
+Pete Kriz,Consumer,Wisconsin,Madison,2017-08-21,Standard,4337.64
+Alejandro Grove,Consumer,Utah,West Jordan,2014-07-23,First,99.98
+Alejandro Grove,Consumer,Utah,West Jordan,2014-05-13,Second,55.5
+Alejandro Grove,Consumer,Utah,West Jordan,2015-09-20,First,37.68
+Alejandro Grove,Consumer,Utah,West Jordan,2016-09-13,Standard,2374.73
+Alejandro Grove,Consumer,Utah,West Jordan,2017-03-27,Second,15.008
+Zuschuss Donatelli,Consumer,California,San Francisco,2014-08-27,Second,244.76
+Zuschuss Donatelli,Consumer,California,San Francisco,2016-07-08,Same Day,839.944
+Zuschuss Donatelli,Consumer,California,San Francisco,2016-04-03,Standard,331.08
+Zuschuss Donatelli,Consumer,California,San Francisco,2017-06-11,First,61.44
+Zuschuss Donatelli,Consumer,California,San Francisco,2016-05-05,Standard,16.72
+Ken Black,Corporate,Nebraska,Fremont,2014-08-17,Standard,15.552
+Ken Black,Corporate,Nebraska,Fremont,2014-04-04,Standard,364.93
+Ken Black,Corporate,Nebraska,Fremont,2014-12-16,Second,1015.816
+Ken Black,Corporate,Nebraska,Fremont,2015-09-04,Standard,9.762
+Ken Black,Corporate,Nebraska,Fremont,2015-04-30,Standard,54.45
+Ken Black,Corporate,Nebraska,Fremont,2015-11-14,First,259.864
+Ken Black,Corporate,Nebraska,Fremont,2016-09-08,Standard,130.328
+Ken Black,Corporate,Nebraska,Fremont,2016-01-10,Standard,149.9
+Ken Black,Corporate,Nebraska,Fremont,2016-12-09,Standard,79.8
+Ken Black,Corporate,Nebraska,Fremont,2017-05-14,Standard,504.59
+Ken Black,Corporate,Nebraska,Fremont,2017-03-12,Standard,69.93
+Ken Black,Corporate,Nebraska,Fremont,2015-03-10,Same Day,89.82
+Sandra Flanagan,Consumer,Pennsylvania,Philadelphia,2014-09-10,First,336.82
+Sandra Flanagan,Consumer,Pennsylvania,Philadelphia,2015-12-05,First,45.04
+Sandra Flanagan,Consumer,Pennsylvania,Philadelphia,2015-08-13,Same Day,31.56
+Sandra Flanagan,Consumer,Pennsylvania,Philadelphia,2016-12-16,First,34.944
+Sandra Flanagan,Consumer,Pennsylvania,Philadelphia,2017-11-01,Second,230.69
+Sandra Flanagan,Consumer,Pennsylvania,Philadelphia,2015-11-25,Standard,13.12
+Sandra Flanagan,Consumer,Pennsylvania,Philadelphia,2017-07-16,Second,71.372
+Emily Burns,Consumer,Utah,Orem,2014-05-05,First,127.869
+Emily Burns,Consumer,Utah,Orem,2015-09-25,Standard,1044.63
+Emily Burns,Consumer,Utah,Orem,2015-07-09,Standard,5.16
+Emily Burns,Consumer,Utah,Orem,2016-10-03,Standard,599.292
+Emily Burns,Consumer,Utah,Orem,2016-12-09,Standard,40.68
+Emily Burns,Consumer,Utah,Orem,2017-03-10,Standard,53.982
+Emily Burns,Consumer,Utah,Orem,2017-01-30,Standard,419.136
+Emily Burns,Consumer,Utah,Orem,2017-09-21,Standard,1.908
+Emily Burns,Consumer,Utah,Orem,2014-11-08,Standard,333.576
+Emily Burns,Consumer,Utah,Orem,2015-05-23,Standard,140.986
+Eric Hoffmann,Consumer,California,Los Angeles,2014-07-02,Standard,79.56
+Eric Hoffmann,Consumer,California,Los Angeles,2015-12-14,Standard,29.22
+Eric Hoffmann,Consumer,California,Los Angeles,2015-07-10,Same Day,3.366
+Eric Hoffmann,Consumer,California,Los Angeles,2016-01-16,Second,102.218
+Eric Hoffmann,Consumer,California,Los Angeles,2017-05-22,Second,68.46
+Eric Hoffmann,Consumer,California,Los Angeles,2017-05-27,Second,25.92
+Eric Hoffmann,Consumer,California,Los Angeles,2016-11-19,Standard,296.668
+Eric Hoffmann,Consumer,California,Los Angeles,2016-11-26,Second,78.759
+Tracy Blumstein,Consumer,Pennsylvania,Philadelphia,2014-10-17,Second,130.756
+Tracy Blumstein,Consumer,Pennsylvania,Philadelphia,2014-10-21,First,531.382
+Tracy Blumstein,Consumer,Pennsylvania,Philadelphia,2014-12-26,Standard,191.88
+Tracy Blumstein,Consumer,Pennsylvania,Philadelphia,2015-09-26,Standard,412.664
+Tracy Blumstein,Consumer,Pennsylvania,Philadelphia,2015-10-19,First,34.44
+Tracy Blumstein,Consumer,Pennsylvania,Philadelphia,2016-02-04,Standard,14.368
+Tracy Blumstein,Consumer,Pennsylvania,Philadelphia,2017-09-14,Second,19.05
+Tracy Blumstein,Consumer,Pennsylvania,Philadelphia,2017-07-23,First,73.512
+Tracy Blumstein,Consumer,Pennsylvania,Philadelphia,2015-09-17,Standard,3329.434
+Matt Abelman,Home Office,Texas,Houston,2014-08-08,Standard,1109.725
+Matt Abelman,Home Office,Texas,Houston,2014-11-11,Second,707.628
+Matt Abelman,Home Office,Texas,Houston,2014-09-21,First,32.16
+Matt Abelman,Home Office,Texas,Houston,2015-12-01,Standard,41.62
+Matt Abelman,Home Office,Texas,Houston,2015-11-27,Second,1170.918
+Matt Abelman,Home Office,Texas,Houston,2015-12-10,Same Day,1033.234
+Matt Abelman,Home Office,Texas,Houston,2016-08-18,Second,14.896
+Matt Abelman,Home Office,Texas,Houston,2017-10-19,Second,29.472
+Matt Abelman,Home Office,Texas,Houston,2017-10-27,Second,34.24
+Matt Abelman,Home Office,Texas,Houston,2017-10-20,Standard,45.528
+Matt Abelman,Home Office,Texas,Houston,2016-08-23,Standard,79.74
+Gene Hale,Corporate,Texas,Richardson,2015-10-08,Standard,72.78
+Gene Hale,Corporate,Texas,Richardson,2016-12-08,First,1288.464
+Steve Nguyen,Home Office,Texas,Houston,2015-12-27,Standard,1228.9532
+Steve Nguyen,Home Office,Texas,Houston,2015-11-27,Standard,221.79
+Steve Nguyen,Home Office,Texas,Houston,2016-11-18,Standard,329.972
+Steve Nguyen,Home Office,Texas,Houston,2016-09-26,Standard,366.78
+Steve Nguyen,Home Office,Texas,Houston,2017-10-12,Standard,254.604
+Steve Nguyen,Home Office,Texas,Houston,2014-05-06,Standard,113.72
+Steve Nguyen,Home Office,Texas,Houston,2016-05-15,Standard,612.14
+Linda Cazamias,Corporate,Illinois,Naperville,2014-02-20,Standard,82.63
+Linda Cazamias,Corporate,Illinois,Naperville,2016-05-21,Standard,2396.4
+Linda Cazamias,Corporate,Illinois,Naperville,2016-08-04,Second,335.12
+Linda Cazamias,Corporate,Illinois,Naperville,2016-09-11,First,33.216
+Linda Cazamias,Corporate,Illinois,Naperville,2016-08-26,First,1184.7
+Linda Cazamias,Corporate,Illinois,Naperville,2017-09-10,Standard,147.168
+Linda Cazamias,Corporate,Illinois,Naperville,2017-06-10,Standard,8.4
+Linda Cazamias,Corporate,Illinois,Naperville,2017-11-19,Standard,305.312
+Ruben Ausman,Corporate,California,Los Angeles,2014-11-22,Standard,1022.61
+Ruben Ausman,Corporate,California,Los Angeles,2015-08-09,Standard,4.608
+Ruben Ausman,Corporate,California,Los Angeles,2016-07-17,Standard,77.88
+Ruben Ausman,Corporate,California,Los Angeles,2017-11-17,Standard,286.09
+Ruben Ausman,Corporate,California,Los Angeles,2014-04-08,Standard,1215.92
+Ruben Ausman,Corporate,California,Los Angeles,2017-09-26,Same Day,1065.216
+Ruben Ausman,Corporate,California,Los Angeles,2017-11-05,First,159.99
+Erin Smith,Corporate,Florida,Melbourne,2014-10-02,First,598.144
+Erin Smith,Corporate,Florida,Melbourne,2015-02-27,Standard,599.9
+Erin Smith,Corporate,Florida,Melbourne,2016-09-29,Standard,859.2
+Erin Smith,Corporate,Florida,Melbourne,2016-12-19,Standard,471.624
+Erin Smith,Corporate,Florida,Melbourne,2016-07-14,First,380.864
+Erin Smith,Corporate,Florida,Melbourne,2016-04-07,First,37.94
+Erin Smith,Corporate,Florida,Melbourne,2017-02-24,Standard,1443.72
+Erin Smith,Corporate,Florida,Melbourne,2017-09-19,Standard,95.616
+Erin Smith,Corporate,Florida,Melbourne,2017-12-02,Standard,170.916

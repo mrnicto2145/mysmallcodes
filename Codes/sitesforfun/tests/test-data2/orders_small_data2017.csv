@@ -1,0 +1,33 @@
+name,segment,state,city,order_date,ship_mode,sales
+Claire Gute,Consumer,Kentucky,Henderson,2017-01-26,First,18.16
+Darrin Van Huff,Corporate,California,Los Angeles,2017-06-30,Standard,19.52
+Darrin Van Huff,Corporate,California,Los Angeles,2017-12-04,Same Day,188.552
+Darrin Van Huff,Corporate,California,Los Angeles,2017-12-11,Standard,873.811
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2017-04-23,First,30.352
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2017-09-09,Standard,458.984
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2017-01-14,Standard,154.9
+Sean O'Donnell,Consumer,Florida,Fort Lauderdale,2017-12-01,Standard,183.82
+Brosina Hoffman,Consumer,California,Los Angeles,2017-05-18,Standard,36.048
+Brosina Hoffman,Consumer,California,Los Angeles,2017-01-14,Standard,175.086
+Brosina Hoffman,Consumer,California,Los Angeles,2017-12-07,Standard,372.64
+Andrew Allen,Consumer,North Carolina,Concord,2017-04-15,Standard,15.552
+Harold Pawlan,Home Office,Texas,Fort Worth,2017-11-30,Second,1311.372
+Harold Pawlan,Home Office,Texas,Fort Worth,2017-01-23,Standard,100.922
+Pete Kriz,Consumer,Wisconsin,Madison,2017-12-21,Second,23.88
+Pete Kriz,Consumer,Wisconsin,Madison,2017-09-04,Second,1491.616
+Pete Kriz,Consumer,Wisconsin,Madison,2017-11-07,Standard,100.94
+Pete Kriz,Consumer,Wisconsin,Madison,2017-03-05,Same Day,25.06
+Pete Kriz,Consumer,Wisconsin,Madison,2017-08-21,Standard,4337.64
+Alejandro Grove,Consumer,Utah,West Jordan,2017-03-27,Second,15.008
+Zuschuss Donatelli,Consumer,California,San Francisco,2017-06-11,First,61.44
+Ken Black,Corporate,Nebraska,Fremont,2017-05-14,Standard,504.59
+Ken Black,Corporate,Nebraska,Fremont,2017-03-12,Standard,69.93
+Sandra Flanagan,Consumer,Pennsylvania,Philadelphia,2017-11-01,Second,230.69
+Sandra Flanagan,Consumer,Pennsylvania,Philadelphia,2017-07-16,Second,71.372
+Emily Burns,Consumer,Utah,Orem,2017-03-10,Standard,53.982
+Emily Burns,Consumer,Utah,Orem,2017-01-30,Standard,419.136
+Emily Burns,Consumer,Utah,Orem,2017-09-21,Standard,1.908
+Eric Hoffmann,Consumer,California,Los Angeles,2017-05-22,Second,68.46
+Eric Hoffmann,Consumer,California,Los Angeles,2017-05-27,Second,25.92
+Tracy Blumstein,Consumer,Pennsylvania,Philadelphia,2017-09-14,Second,19.05
+Tracy Blumstein,Consumer,Pennsylvania,Philadelphia,2017-07-23,First,73.512

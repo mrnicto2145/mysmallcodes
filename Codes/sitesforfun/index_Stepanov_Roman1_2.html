@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Анализ выручки по городам и штатам</title>
+  <style>
+    :root {
+      --bg-color: #f0f4f8;
+      --container-bg: #fff;
+      --text-color: #333;
+      --table-header-bg: #0077cc;
+      --table-header-text: #fff;
+      --row-even-bg: #f9fbfc;
+      --highlight-bg: #eaf4ff;
+      --chart-bg: #fff;
+    }
+    body.dark {
+      --bg-color: #121212;
+      --container-bg: #1e1e1e;
+      --text-color: #e0e0e0;
+      --table-header-bg: #444;
+      --table-header-text: #e0e0e0;
+      --row-even-bg: #2a2a2a;
+      --highlight-bg: #333;
+      --chart-bg: #2a2a2a;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      margin-top: 30px;
+      background: var(--container-bg);
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px 30px;
+      transition: background-color 0.3s;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    .city-comparison {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
+      padding: 15px;
+      background-color: var(--highlight-bg);
+      border-radius: 6px;
+    }
+    label {
+      font-weight: 600;
+    }
+    select, input[type="file"], button {
+      padding: 8px 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fff;
+      color: #333;
+      font-size: 14px;
+    }
+    body.dark select, body.dark input[type="file"], body.dark button {
+      background-color: #333;
+      color: #e0e0e0;
+      border: 1px solid #555;
+    }
+    #themeToggle:hover, #showFullTableBtn:hover, #compareCitiesBtn:hover {
+      background-color: #0077cc;
+      color: white;
+    }
+    body.dark #themeToggle:hover, body.dark #showFullTableBtn:hover, body.dark #compareCitiesBtn:hover {
+      background-color: #005fa3;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th {
+      background-color: var(--table-header-bg);
+      color: var(--table-header-text);
+      padding: 12px 8px;
+      text-align: center;
+      font-weight: 600;
+    }
+    td {
+      padding: 10px 8px;
+      text-align: center;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    tr:nth-child(even) {
+      background-color: var(--row-even-bg);
+    }
+    #totalRevenue{
+      margin-top: 20px;
+      padding: 12px;
+      background-color: var(--highlight-bg);
+      border-radius: 6px;
+      text-align: left;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    #messageBox {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 6px;
+      width: 96.5%;
+      font-weight: 600;
+      text-align: center;
+      display: none;
+    }
+    #messageBox.error { background-color: rgba(255, 0, 0, 0.3); }
+    #messageBox.warning { background-color: rgba(255, 255, 0, 0.3); }
+    #messageBox.success { background-color: rgba(0, 255, 0, 0.3); }
+
+    #fullTableContainer {
+      display: none;
+      margin-top: 30px;
+    }
+
+    #missingFieldsTable, #statsTable {
+      margin-top: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: var(--table-header-bg);
+      width: 100%;
+      text-align: center;
+    }
+    #missingFieldsTable th, #statsTable th{
+      padding: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+    #missingFieldsTable tr, #statsTable tr{
+      background-color: var(--bg-color);
+    }
+    
+    .charts-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .chart-box {
+      box-sizing: border-box;
+      width: 100%;
+      background: var(--container-bg);
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .chart-title {
+      text-align: center;
+      margin-bottom: 15px;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .chart-wrapper {
+      position: relative;
+      height: 400px;
+      margin: 0 auto;
+    }
+    canvas {
+      max-width: 100%;
+      max-height: 100%;
+      background: var(--chart-bg);
+      border-radius: 6px;
+      padding: 10px;
+    }
+    .no-data {
+      text-align: center;
+      padding: 40px;
+      color: #888;
+      font-style: italic;
+    }
+    .city-select-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .city-select-wrapper select {
+      min-width: 200px;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2 id="mainHeader">Анализ выручки по городам и штатам</h2>
+
+    <div class="controls">
+      <input type="file" id="fileInput" accept=".csv">
+      <label for="yearSelect">Выберите год:</label>
+      <select id="yearSelect"></select>
+      <button id="themeToggle">Тёмная тема</button>
+      <button id="showFullTableBtn">Посмотреть полную таблицу</button>
+    </div>
+
+    <div id="messageBox"></div>
+
+    <table id="resultTable">
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Город (Штат)</th>
+          <th>Количество заказов</th>
+          <th>Выручка ($)</th>
+          <th>Доля за год (%)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div id="totalRevenue">
+      <p>Общая выручка за год: $0.00</p>
+      <p>Выручка топ 10 за год: $0.00</p>
+      <p>Доля топ 10 за год: 0.00%</p>
+    </div>
+
+    <div class="charts-container">
+      <div class="chart-box">
+        <div class="chart-title">Доля выручки по городам (топ 10 + остальные)</div>
+        <div class="chart-wrapper">
+          <canvas id="pieChart"></canvas>
+        </div>
+        <div id="pieNoData" class="no-data">Загрузите данные для отображения диаграммы</div>
+      </div>
+      
+    <div class="city-comparison">
+      <div class="city-select-wrapper">
+        <label for="city1Select">Первый город для сравнения:</label>
+        <select id="city1Select">
+          <option value="">-- Выберите город --</option>
+        </select>
+      </div>
+      <div class="city-select-wrapper">
+        <label for="city2Select">Второй город для сравнения:</label>
+        <select id="city2Select">
+          <option value="">-- Выберите город --</option>
+        </select>
+      </div>
+      <button id="compareCitiesBtn">Сравнить города</button>
+    </div>
+
+      <div class="chart-box">
+        <div class="chart-title">Сравнение выручки городов по годам</div>
+        <div class="chart-wrapper">
+          <canvas id="barChart"></canvas>
+        </div>
+        <div id="barNoData" class="no-data">Выберите города для сравнения</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const fileInput = document.getElementById('fileInput');
+    const yearSelect = document.getElementById('yearSelect');
+    const tableBody = document.querySelector('#resultTable tbody');
+    const totalRevenueDiv = document.getElementById('totalRevenue');
+    const themeToggle = document.getElementById('themeToggle');
+    const messageBox = document.getElementById('messageBox');
+    const showFullTableBtn = document.getElementById('showFullTableBtn');
+    const mainHeader = document.getElementById('mainHeader');
+    const city1Select = document.getElementById('city1Select');
+    const city2Select = document.getElementById('city2Select');
+    const compareCitiesBtn = document.getElementById('compareCitiesBtn');
+    const pieNoData = document.getElementById('pieNoData');
+    const barNoData = document.getElementById('barNoData');
+
+    let data = [];
+    let showFullTable = false;
+    let pieChart = null;
+    let barChart = null;
+    let availableCities = [];
+
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      themeToggle.textContent = document.body.classList.contains('dark') ? 'Светлая тема' : 'Тёмная тема';
+      updateChartThemes();
+    });
+
+    fileInput.addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      Papa.parse(file, {
+        header: true,
+        dynamicTyping: true,
+        complete: function(results) {
+          const requiredFields = ['order_date', 'sales', 'state', 'city'];
+          const headers = results.meta.fields || [];
+          const checkFields = ['name', 'segment', 'state', 'city', 'order_date', 'ship_mode', 'sales'];
+          const missingFields = checkFields.filter(f => !headers.includes(f));
+
+          if (missingFields.length > 0) {
+            showMessage('error', 'Ошибка: Файл .csv не содержит необходимых полей');
+            renderMissingFields(missingFields);
+            return;
+          }
+
+          const totalRows = results.data.length;
+          const validData = [];
+          let invalidCount = 0;
+          let invalidSales = 0;
+          let missingValues = 0;
+
+          // Собираем уникальные города
+          const citySet = new Set();
+
+          results.data.forEach(row => {
+            const hasValidDate = row.order_date && !isNaN(Date.parse(row.order_date));
+            const hasValidSales = typeof row.sales === 'number' && row.sales > 0 && row.sales < 100000;
+            const hasRequiredFields = row.name && row.segment && row.state && row.city && row.ship_mode;
+            
+            if (hasValidDate && hasValidSales && hasRequiredFields) {
+              validData.push(row);
+              // Создаем уникальный идентификатор города с учетом штата
+              const cityState = `${row.city.trim()}, ${row.state.trim()}`;
+              citySet.add(cityState);
+            } else {
+              invalidCount++;
+              if (typeof row.sales === 'number' && (row.sales <= 0 || row.sales >= 100000)) {
+                invalidSales++;
+              }
+              if (!(row.order_date && row.sales && row.state && row.city && row.name && row.segment && row.ship_mode && !isNaN(Date.parse(row.order_date)))) {
+                missingValues++;
+              }
+            }
+          });
+
+          data = validData;
+          // Обновляем список доступных городов
+          availableCities = Array.from(citySet).sort();
+
+          if (invalidCount > 0 && validData.length > 0) {
+            showMessage('warning', 'Внимание: Данные загружены с предупреждениями, некоторые строки исключены');
+            renderStats(totalRows, validData.length, invalidCount, invalidSales, missingValues);
+          } else if (invalidCount === 0 && validData.length > 0) {
+            showMessage('success', 'Данные загружены и проверены');
+            renderStats(totalRows, validData.length, invalidCount, invalidSales, missingValues);
+          } else {
+            showMessage('error', 'Ошибка: Файл не содержит корректных данных для анализа');
+            return;
+          }
+
+          populateYears();
+          updateCitySelects();
+        }
+      });
+    });
+
+    function showMessage(type, text) {
+      messageBox.className = '';
+      messageBox.classList.add(type);
+      messageBox.textContent = text;
+      messageBox.style.display = 'block';
+      
+      // Очищаем предыдущие таблицы
+      const existingTables = messageBox.querySelectorAll('table');
+      existingTables.forEach(table => table.remove());
+    }
+
+    function renderMissingFields(fields) {
+      const table = document.createElement('table');
+      table.id = 'missingFieldsTable';
+      table.innerHTML = `<thead><tr><th>Отсутствующие поля</th></tr></thead><tbody>${fields.map(f => `<tr><td>${f}</td></tr>`).join('')}</tbody>`;
+      messageBox.appendChild(table);
+    }
+
+    function renderStats(total, valid, invalid, invSales, missVal) {
+      const table = document.createElement('table');
+      table.id = 'statsTable';
+      table.innerHTML = `<thead><tr><th>Статистика загрузки</th><th>Количество строк</th></tr></thead>
+        <tbody>
+          <tr><td>Всего строк</td><td>${total}</td></tr>
+          <tr><td>Корректных строк</td><td>${valid}</td></tr>
+          <tr><td>Строк с пустыми значениями</td><td>${missVal}</td></tr>
+          <tr><td>Выброс в продажах</td><td>${invSales}</td></tr>
+          <tr><td>Отброшенных строк</td><td>${invalid}</td></tr>
+        </tbody>`;
+      messageBox.appendChild(table);
+    }
+
+    function updateCitySelects() {
+      // Обновляем оба select элемента
+      const options = availableCities.map(city => 
+        `<option value="${city}">${city}</option>`
+      ).join('');
+      
+      const defaultOption = '<option value="">-- Выберите город --</option>';
+      
+      city1Select.innerHTML = defaultOption + options;
+      city2Select.innerHTML = defaultOption + options;
+    }
+
+    function populateYears() {
+      const years = [...new Set(data.map(row => new Date(row.order_date).getFullYear()))].sort();
+      yearSelect.innerHTML = years.map(y => `<option value="${y}">${y}</option>`).join('');
+      if (years.length > 0) {
+        showTable(years[0]);
+      }
+    }
+
+    yearSelect.addEventListener('change', () => showTable(yearSelect.value));
+    compareCitiesBtn.addEventListener('click', compareCities);
+
+    function showTable(year) {
+      if (!year || data.length === 0) return;
+      
+      const filtered = data.filter(row => new Date(row.order_date).getFullYear() == year);
+      const grouped = {};
+      let totalRevenue = 0;
+      let top10Revenue = 0;
+
+      // Группируем по городу и штату
+      filtered.forEach(row => {
+        const cityState = `${row.city.trim()}, ${row.state.trim()}`;
+        if (!grouped[cityState]) {
+          grouped[cityState] = { revenue: 0, orders: 0 };
+        }
+        grouped[cityState].revenue += row.sales;
+        grouped[cityState].orders += 1;
+        totalRevenue += row.sales;
+      });
+
+      // Сортируем по выручке
+      const allCities = Object.entries(grouped)
+        .map(([cityState, vals]) => ({
+          cityState,
+          revenue: vals.revenue,
+          orders: vals.orders
+        }))
+        .sort((a, b) => b.revenue - a.revenue);
+
+      const top10 = allCities.slice(0, 10);
+      top10.forEach(r => top10Revenue += r.revenue);
+
+      // Обновляем таблицу
+      const displayData = showFullTable ? allCities : top10;
+      tableBody.innerHTML = displayData.map((r, i) => {
+        const share = totalRevenue > 0 ? (r.revenue / totalRevenue * 100) : 0;
+        return `
+        <tr>
+          <td>${i + 1}</td>
+          <td>${r.cityState}</td>
+          <td>${r.orders}</td>
+          <td>$${r.revenue.toFixed(2)}</td>
+          <td>${share.toFixed(2)}%</td>
+        </tr>`;
+      }).join('');
+      
+      const formatter = new Intl.NumberFormat('en-US', {
+        style: 'decimal',
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
+
+      totalRevenueDiv.innerHTML = `
+        <p>Общая выручка за ${year} год: $${formatter.format(totalRevenue)}</p>
+        <p>Выручка топ 10 за ${year} год: $${formatter.format(top10Revenue)}</p>
+        <p>Доля топ 10 за ${year} год: ${formatter.format(totalRevenue > 0 ? (top10Revenue / totalRevenue * 100) : 0)}%</p>`;
+
+      // Обновляем круговую диаграмму
+      updatePieChart(allCities, totalRevenue, year);
+      
+      // Если выбраны города для сравнения, обновляем столбчатую диаграмму
+      if (city1Select.value && city2Select.value) {
+        compareCities();
+      }
+    }
+
+    function updatePieChart(citiesData, totalRevenue, year) {
+      const pieCanvas = document.getElementById('pieChart');
+      pieNoData.style.display = 'none';
+      pieCanvas.style.display = 'block';
+      
+      // Берем топ 10 городов и группируем остальные
+      const top10 = citiesData.slice(0, 10);
+      const othersRevenue = citiesData.slice(10).reduce((sum, city) => sum + city.revenue, 0);
+      
+      const labels = top10.map(city => city.cityState);
+      const dataValues = top10.map(city => city.revenue);
+      
+      if (othersRevenue > 0) {
+        labels.push('Остальные города');
+        dataValues.push(othersRevenue);
+      }
+      
+      // Генерируем цвета
+      const backgroundColors = generateColors(labels.length);
+      
+      if (pieChart) {
+        pieChart.destroy();
+      }
+      
+      pieChart = new Chart(pieCanvas, {
+        type: 'pie',
+        data: {
+          labels: labels,
+          datasets: [{
+            data: dataValues,
+            backgroundColor: backgroundColors,
+            borderColor: document.body.classList.contains('dark') ? '#444' : '#fff',
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: 'right',
+              labels: {
+                color: getComputedStyle(document.body).getPropertyValue('--text-color'),
+                font: {
+                  size: 10
+                }
+              }
+            },
+            title: {
+              display: true,
+              text: `Распределение выручки за ${year} год`,
+              color: getComputedStyle(document.body).getPropertyValue('--text-color'),
+              font: {
+                size: 14
+              }
+            },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const value = context.raw;
+                  const percentage = totalRevenue > 0 ? (value / totalRevenue * 100).toFixed(2) : 0;
+                  return `${context.label}: $${value.toFixed(2)} (${percentage}%)`;
+                }
+              }
+            }
+          }
+        },
+        plugins: [{
+          id: 'percentages',
+          afterDraw: function(chart) {
+            const ctx = chart.ctx;
+            const width = chart.width;
+            const height = chart.height;
+            
+            chart.data.datasets.forEach(function (dataset, i) {
+              const meta = chart.getDatasetMeta(i);
+              if (!meta.hidden) {
+                meta.data.forEach(function (element, index) {
+                  // Пропускаем маленькие сегменты
+                  if (element.circumference < 0.05) return;
+                  
+                  const value = dataset.data[index];
+                  const percentage = totalRevenue > 0 ? (value / totalRevenue * 100).toFixed(1) : 0;
+                  
+                  // Получаем центр сегмента
+                  const halfAngle = element.startAngle + element.circumference / 2;
+                  const centerX = element.x;
+                  const centerY = element.y;
+                  
+                  // Вычисляем позицию для текста (немного смещаем от центра)
+                  const distance = Math.min(width, height) / 3;
+                  const textX = centerX + Math.cos(halfAngle) * distance * 0.7;
+                  const textY = centerY + Math.sin(halfAngle) * distance * 0.7;
+                  
+                  // Настройки текста
+                  ctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--text-color');
+                  ctx.font = 'bold 12px Arial';
+                  ctx.textAlign = 'center';
+                  ctx.textBaseline = 'middle';
+                  
+                  // Рисуем фон для лучшей читаемости
+                  const text = percentage + '%';
+                  const textWidth = ctx.measureText(text).width;
+                  const textHeight = 14;
+                  ctx.fillStyle = document.body.classList.contains('dark') 
+                    ? 'rgba(30, 30, 30, 0.8)' 
+                    : 'rgba(255, 255, 255, 0.8)';
+                  ctx.fillRect(
+                    textX - textWidth/2 - 3, 
+                    textY - textHeight/2 - 2, 
+                    textWidth + 6, 
+                    textHeight + 4
+                  );
+                  
+                  // Рисуем текст
+                  ctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--text-color');
+                  ctx.fillText(text, textX, textY);
+                });
+              }
+            });
+          }
+        }]
+      });
+    }
+
+    function compareCities() {
+      const city1 = city1Select.value.trim();
+      const city2 = city2Select.value.trim();
+      
+      if (!city1 || !city2) {
+        showMessage('warning', 'Выберите оба города для сравнения');
+        return;
+      }
+      
+      if (city1 === city2) {
+        showMessage('warning', 'Выберите разные города для сравнения');
+        return;
+      }
+      
+      // Получаем все годы из данных
+      const years = [...new Set(data.map(row => new Date(row.order_date).getFullYear()))].sort();
+      
+      // Собираем данные по годам для каждого города
+      const city1Data = {};
+      const city2Data = {};
+      
+      years.forEach(year => {
+        city1Data[year] = 0;
+        city2Data[year] = 0;
+      });
+      
+      data.forEach(row => {
+        const year = new Date(row.order_date).getFullYear();
+        const cityState = `${row.city.trim()}, ${row.state.trim()}`;
+        
+        if (cityState === city1) {
+          city1Data[year] += row.sales;
+        }
+        if (cityState === city2) {
+          city2Data[year] += row.sales;
+        }
+      });
+      
+      // Обновляем столбчатую диаграмму
+      updateBarChart(city1, city2, years, city1Data, city2Data);
+    }
+
+    function updateBarChart(city1, city2, years, city1Data, city2Data) {
+      const barCanvas = document.getElementById('barChart');
+      barNoData.style.display = 'none';
+      barCanvas.style.display = 'block';
+      
+      const city1Values = years.map(year => city1Data[year] || 0);
+      const city2Values = years.map(year => city2Data[year] || 0);
+      
+      if (barChart) {
+        barChart.destroy();
+      }
+      
+      const isDarkMode = document.body.classList.contains('dark');
+      
+      barChart = new Chart(barCanvas, {
+        type: 'bar',
+        data: {
+          labels: years,
+          datasets: [
+            {
+              label: city1,
+              data: city1Values,
+              backgroundColor: isDarkMode ? 'rgba(54, 162, 235, 0.7)' : 'rgba(54, 162, 235, 0.5)',
+              borderColor: isDarkMode ? 'rgba(54, 162, 235, 1)' : 'rgba(54, 162, 235, 1)',
+              borderWidth: 1
+            },
+            {
+              label: city2,
+              data: city2Values,
+              backgroundColor: isDarkMode ? 'rgba(255, 99, 132, 0.7)' : 'rgba(255, 99, 132, 0.5)',
+              borderColor: isDarkMode ? 'rgba(255, 99, 132, 1)' : 'rgba(255, 99, 132, 1)',
+              borderWidth: 1
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              labels: {
+                color: getComputedStyle(document.body).getPropertyValue('--text-color')
+              }
+            },
+            title: {
+              display: true,
+              text: `Сравнение выручки: ${city1} vs ${city2}`,
+              color: getComputedStyle(document.body).getPropertyValue('--text-color'),
+              font: {
+                size: 14
+              }
+            },
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  return `${context.dataset.label}: $${context.raw.toFixed(2)}`;
+                }
+              }
+            }
+          },
+          scales: {
+            x: {
+              ticks: {
+                color: getComputedStyle(document.body).getPropertyValue('--text-color')
+              },
+              grid: {
+                color: isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)'
+              }
+            },
+            y: {
+              beginAtZero: true,
+              ticks: {
+                color: getComputedStyle(document.body).getPropertyValue('--text-color'),
+                callback: function(value) {
+                  return '$' + value.toLocaleString();
+                }
+              },
+              grid: {
+                color: isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)'
+              }
+            }
+          }
+        },
+        plugins: [{
+          id: 'datalabels',
+          afterDatasetsDraw: function(chart) {
+            const ctx = chart.ctx;
+            chart.data.datasets.forEach((dataset, i) => {
+              const meta = chart.getDatasetMeta(i);
+              if (!meta.hidden) {
+                meta.data.forEach((element, index) => {
+                  // Пропускаем отрисовку если значение 0
+                  if (dataset.data[index] === 0) return;
+                  
+                  const {x, y} = element;
+                  const text = '$' + Math.round(dataset.data[index]).toLocaleString();
+                  
+                  // Настройки текста
+                  ctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--text-color');
+                  ctx.font = 'bold 10px Arial';
+                  ctx.textAlign = 'center';
+                  ctx.textBaseline = 'bottom';
+                  
+                  // Рисуем фон для лучшей читаемости
+                  const textWidth = ctx.measureText(text).width;
+                  const textHeight = 12;
+                  ctx.fillStyle = isDarkMode ? 'rgba(30, 30, 30, 0.8)' : 'rgba(255, 255, 255, 0.8)';
+                  ctx.fillRect(x - textWidth/2 - 2, y - textHeight - 2, textWidth + 4, textHeight + 2);
+                  
+                  // Рисуем текст
+                  ctx.fillStyle = getComputedStyle(document.body).getPropertyValue('--text-color');
+                  ctx.fillText(text, x, y - 2);
+                });
+              }
+            });
+          }
+        }]
+      });
+    }
+
+    function generateColors(count) {
+      const colors = [];
+      const hueStep = 360 / count;
+      
+      for (let i = 0; i < count; i++) {
+        const hue = i * hueStep;
+        colors.push(`hsl(${hue}, 70%, 60%)`);
+      }
+      
+      return colors;
+    }
+
+    function updateChartThemes() {
+      if (pieChart || barChart) {
+        const year = yearSelect.value;
+        if (year && data.length > 0) {
+          showTable(year);
+        }
+        if (city1Select.value && city2Select.value) {
+          compareCities();
+        }
+      }
+    }
+
+    function renderMainHeader(){
+      mainHeader.innerText = showFullTable ? 'Анализ выручки по всем городам' : 'Анализ выручки по городам (топ 10)';
+    }
+
+    showFullTableBtn.addEventListener('click', () => {
+      showFullTable = !showFullTable;
+      showFullTableBtn.textContent = showFullTable ? 'Скрыть полную таблицу' : 'Посмотреть полную таблицу';
+      const year = yearSelect.value;
+      if (year) {
+        showTable(year);
+      }
+      renderMainHeader();
+    });
+  </script>
+</body>
+</html>
