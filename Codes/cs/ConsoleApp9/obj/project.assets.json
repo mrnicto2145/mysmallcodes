@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\code\\cs\\ConsoleApp9\\ConsoleApp9.csproj",
+      "projectUniqueName": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleApp9\\ConsoleApp9.csproj",
       "projectName": "ConsoleApp9",
-      "projectPath": "d:\\code\\cs\\ConsoleApp9\\ConsoleApp9.csproj",
+      "projectPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleApp9\\ConsoleApp9.csproj",
       "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
-      "outputPath": "d:\\code\\cs\\ConsoleApp9\\obj\\",
+      "outputPath": "C:\\Users\\123\\Documents\\GitHub\\mysmallcodes\\Codes\\cs\\ConsoleApp9\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config"
